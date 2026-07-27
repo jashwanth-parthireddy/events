@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopEase - Online Shopping</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f1f3f6;
+}
+
+/* Header */
+header{
+    background:#2874f0;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.search-box{
+    width:45%;
+}
+
+.search-box input{
+    width:100%;
+    padding:10px;
+    border:none;
+    border-radius:4px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+}
+
+/* Hero */
+.hero{
+    height:350px;
+    background:linear-gradient(to right,#2874f0,#0b57d0);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    margin:20px;
+    font-size:20px;
+}
+
+.hero button{
+    padding:12px 30px;
+    border:none;
+    background:#ff9f00;
+    color:white;
+    font-size:18px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Categories */
+.section{
+    padding:40px 60px;
+}
+
+.section h2{
+    margin-bottom:20px;
+}
+
+.categories{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    text-align:center;
+    padding:20px;
+    transition:.3s;
+    box-shadow:0 3px 8px rgba(0,0,0,.1);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0;
+}
+
+.price{
+    color:green;
+    font-size:20px;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    background:#172337;
+    color:white;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">ShopEase</div>
+
+<div class="search-box">
+<input type="text" placeholder="Search for products...">
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Categories</a>
+<a href="#">Offers</a>
+<a href="#">Cart</a>
+<a href="#">Login</a>
+</nav>
+
+</header>
+
+<section class="hero">
+<h1>Big Shopping Festival</h1>
+<p>Up to 70% OFF on Electronics, Fashion & Home Appliances</p>
+<button>Shop Now</button>
+</section>
+
+<section class="section">
+
+<h2>Featured Products</h2>
+
+<div class="categories">
+
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="">
+<h3>Smartphone</h3>
+<div class="price">$299</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="">
+<h3>Laptop</h3>
+<div class="price">$799</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="">
+<h3>Headphones</h3>
+<div class="price">$59</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="">
+<h3>Smart Watch</h3>
+<div class="price">$149</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/150" alt="">
+<h3>Gaming Mouse</h3>
+<div class="price">$39</div>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 ShopEase. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
